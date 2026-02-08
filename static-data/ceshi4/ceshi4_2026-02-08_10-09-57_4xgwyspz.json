@@ -1,0 +1,981 @@
+{
+  "$schema": "guixu-static-database-v1",
+  "$version": "1.0.0",
+  "version": "1.0.0",
+  "name": "ceshi4",
+  "id": "db_ceshi4",
+  "author": "slot",
+  "description": "ceshi4ceshi4ceshi4",
+  "createdAt": "2026-01-24 16:47:53",
+  "tags": [],
+  "uploadedAt": "2026-02-08 10:09:57",
+  "游玩编号": {
+    "run_20260127_081451_zy6l3dz1": {
+      "created_at": 1769501707,
+      "已写入": {
+        "talent_def": {
+          "TF_CESHI": true
+        },
+        "linggen_def": {
+          "LG_CESHI": true
+        },
+        "gongfa_def": {
+          "GF_CESHI": true
+        },
+        "shentong_def": {
+          "ST_CESHI": true
+        },
+        "item": {
+          "WP_CESHI": true
+        },
+        "title": {
+          "CH_CESHI": true
+        },
+        "status": {
+          "ZT_CESHI": true
+        },
+        "npc_tpl": {
+          "NPC_DY_CESHI": true
+        },
+        "npc_inst": {
+          "NPC_SY_CESHI": true
+        },
+        "location": {
+          "DD_CESHI": true
+        }
+      }
+    }
+  },
+  "boundWorldbook": {
+    "worldbookName": "归墟（拼好卡）",
+    "entries": []
+  },
+  "天赋定义列表": {
+    "$meta": {
+      "extensible": true
+    },
+    "TF_CESHI": {
+      "id": "TF_CESHI",
+      "name": "TF_CESHI",
+      "品阶": "神品",
+      "description": "TF_CESHITF_CESHITF_CESHITF_CESHI",
+      "bonuses": {
+        "fixed_values": {
+          "foundation": {
+            "根骨": 5
+          },
+          "core": {
+            "物攻": 10
+          }
+        },
+        "percentage_values": {
+          "foundation": {
+            "根骨": 0.5
+          },
+          "core": {
+            "物攻": 0.1
+          },
+          "resources": {
+            "生命": 0.25
+          }
+        }
+      },
+      "special_effects": {
+        "$meta": {
+          "extensible": true
+        },
+        "ceshi": "ceshiceshiceshiceshiceshi"
+      }
+    }
+  },
+  "灵根定义列表": {
+    "$meta": {
+      "extensible": true
+    },
+    "LG_CESHI": {
+      "id": "LG_CESHI",
+      "name": "CESHICESHICESHI",
+      "品阶": "神品",
+      "description": "CESHICESHICESHICESHI",
+      "bonuses": {
+        "fixed_values": {
+          "foundation": {
+            "身法": 1
+          },
+          "core": {
+            "物攻": 1
+          }
+        },
+        "percentage_values": {
+          "foundation": {
+            "悟性": 0.1
+          },
+          "core": {
+            "法抗": 0.1
+          },
+          "resources": {
+            "生命": 0.1
+          }
+        }
+      },
+      "special_effects": {
+        "23": "23232323",
+        "$meta": {
+          "extensible": true
+        }
+      }
+    }
+  },
+  "功法定义列表": {
+    "$meta": {
+      "extensible": true
+    },
+    "GF_CESHI": {
+      "id": "GF_CESHI",
+      "name": "CESHI",
+      "tier": "神桥",
+      "品阶": "神品",
+      "description": "CESHICESHI",
+      "功法属性": "CESHI",
+      "总层数": 1,
+      "修炼条件": {
+        "根基要求": {
+          "$meta": {
+            "extensible": true
+          },
+          "根骨": 10,
+          "悟性": 10
+        },
+        "前置功法ID": null
+      },
+      "层级效果": {
+        "1": {
+          "description": "CESHI",
+          "突破点数": 100,
+          "bonuses": {
+            "fixed_values": {
+              "foundation": {
+                "根骨": 1
+              },
+              "core": {
+                "法强": 1
+              },
+              "resources": {
+                "法力": 1
+              }
+            },
+            "percentage_values": {
+              "foundation": {
+                "根骨": 0.1
+              },
+              "core": {
+                "物攻": 0.1
+              },
+              "resources": {
+                "生命": 0.1
+              }
+            }
+          },
+          "解锁神通": {
+            "$meta": {
+              "extensible": true
+            },
+            "ST_CESHI": true
+          }
+        },
+        "$meta": {
+          "extensible": true
+        }
+      },
+      "bonuses": {
+        "fixed_values": {
+          "foundation": {
+            "根骨": 0,
+            "身法": 0
+          }
+        },
+        "percentage_values": {
+          "foundation": {
+            "根骨": 0
+          },
+          "core": {
+            "物攻": 0
+          }
+        }
+      }
+    }
+  },
+  "神通列表": {
+    "$meta": {
+      "extensible": true
+    },
+    "ST_CESHI": {
+      "id": "ST_CESHI",
+      "name": "CESHI",
+      "type": "辅助",
+      "description": "CESHICESHICESHI",
+      "special_effects": {
+        "$meta": {
+          "extensible": true
+        },
+        "CESHI": "CESHICESHICESHI"
+      }
+    }
+  },
+  "物品列表": {
+    "$meta": {
+      "extensible": true
+    },
+    "WP_CESHI": {
+      "id": "WP_CESHI",
+      "name": "CESHI",
+      "type": "武器",
+      "部位": "单手",
+      "tier": "神桥",
+      "品阶": "神品",
+      "description": "CESHICESHICESHI",
+      "max_stack": 10,
+      "bonuses": {
+        "fixed_values": {
+          "foundation": {
+            "身法": 1
+          },
+          "core": {
+            "物防": 1
+          },
+          "resources": {
+            "生命": 3
+          }
+        },
+        "percentage_values": {
+          "foundation": {
+            "根骨": 0.1
+          },
+          "core": {
+            "物攻": 0.1
+          },
+          "resources": {
+            "生命": 0.2
+          }
+        }
+      },
+      "special_effects": {
+        "23": "CESHI",
+        "$meta": {
+          "extensible": true
+        }
+      },
+      "unlocks_gongfa_id": null,
+      "base_value": 10
+    }
+  },
+  "称号列表": {
+    "$meta": {
+      "extensible": true
+    },
+    "CH_CESHI": {
+      "id": "CH_CESHI",
+      "name": "CESHI",
+      "品阶": "神品",
+      "description": "CESHI",
+      "bonuses": {
+        "fixed_values": {
+          "foundation": {
+            "根骨": 2
+          },
+          "core": {
+            "物攻": 2
+          }
+        },
+        "percentage_values": {
+          "foundation": {
+            "根骨": 0.2
+          },
+          "core": {
+            "物攻": 0.1
+          }
+        }
+      },
+      "special_effects": {
+        "2323": "CESHI",
+        "$meta": {
+          "extensible": true
+        }
+      }
+    }
+  },
+  "状态列表": {
+    "$meta": {
+      "extensible": true
+    },
+    "ZT_CESHI": {
+      "id": "ZT_CESHI",
+      "name": "CESHI",
+      "description": "CESHICESHI",
+      "type": "NEUTRAL",
+      "base_duration": 1,
+      "bonuses": {
+        "fixed_values": {
+          "foundation": {},
+          "core": {
+            "物攻": 10
+          },
+          "resources": {
+            "生命": 10
+          }
+        },
+        "percentage_values": {
+          "foundation": {},
+          "core": {
+            "物攻": 0.1
+          },
+          "resources": {
+            "生命": 0.2
+          }
+        }
+      },
+      "special_effects": {
+        "323": "CESHICESHI",
+        "$meta": {
+          "extensible": true
+        }
+      }
+    }
+  },
+  "NPC定义列表": {
+    "$meta": {
+      "extensible": true
+    },
+    "NPC_DY_CESHI": {
+      "id": "NPC_DY_CESHI",
+      "name": "DY_CESHI",
+      "性别": "DY_CESHI",
+      "种族": "DY_CESHI",
+      "背景": "DY_CESHI",
+      "道号": "DY_CESHI",
+      "身份": "DY_CESHI",
+      "性格": "DY_CESHI",
+      "外貌": "DY_CESHI",
+      "tier": "神桥",
+      "level": 1,
+      "根基属性": {
+        "根骨": {
+          "基础": 0,
+          "加成": 0,
+          "最终值": 0
+        },
+        "身法": {
+          "基础": 0,
+          "加成": 0,
+          "最终值": 0
+        },
+        "悟性": {
+          "基础": 0,
+          "加成": 0,
+          "最终值": 0
+        },
+        "神海": {
+          "基础": 0,
+          "加成": 0,
+          "最终值": 0
+        },
+        "经脉": {
+          "基础": 0,
+          "加成": 0,
+          "最终值": 0
+        },
+        "魂魄": {
+          "基础": 0,
+          "加成": 0,
+          "最终值": 0
+        },
+        "道心": {
+          "基础": 0,
+          "加成": 0,
+          "最终值": 0
+        },
+        "魅力": {
+          "基础": 0,
+          "加成": 0,
+          "最终值": 0
+        },
+        "气运": {
+          "基础": 0,
+          "加成": 0,
+          "最终值": 0
+        }
+      },
+      "核心属性": {
+        "物攻": {
+          "基础": 0,
+          "加成": 0,
+          "最终值": 0
+        },
+        "法强": {
+          "基础": 0,
+          "加成": 0,
+          "最终值": 0
+        },
+        "物防": {
+          "基础": 0,
+          "加成": 0,
+          "最终值": 0
+        },
+        "法抗": {
+          "基础": 0,
+          "加成": 0,
+          "最终值": 0
+        },
+        "空速": {
+          "基础": 0,
+          "加成": 0,
+          "最终值": 0
+        },
+        "暴击率": {
+          "基础": 0,
+          "加成": 0,
+          "最终值": 0
+        },
+        "神识强度": {
+          "基础": 0,
+          "加成": 0,
+          "最终值": 0
+        }
+      },
+      "属性状态": {
+        "生命": {
+          "当前": 0,
+          "上限": {
+            "基础": 0,
+            "加成": 0,
+            "最终上限": 0
+          }
+        },
+        "体力": {
+          "当前": 0,
+          "上限": {
+            "基础": 0,
+            "加成": 0,
+            "最终上限": 0
+          }
+        },
+        "法力": {
+          "当前": 0,
+          "上限": {
+            "基础": 0,
+            "加成": 0,
+            "最终上限": 0
+          }
+        },
+        "神识": {
+          "当前": 0,
+          "上限": {
+            "基础": 0,
+            "加成": 0,
+            "最终上限": 0
+          }
+        }
+      },
+      "已获天赋": {
+        "$meta": {
+          "extensible": true
+        },
+        "TF_CESHI": true
+      },
+      "已获灵根": {
+        "$meta": {
+          "extensible": true
+        },
+        "LG_CESHI": true
+      }
+    }
+  },
+  "NPC实例列表": {
+    "$meta": {
+      "extensible": true
+    },
+    "NPC_SY_CESHI": {
+      "id": "NPC_SY_CESHI",
+      "template_id": "ZT_CESHI",
+      "name": "SY_CESHI",
+      "性别": "SY_CESHI",
+      "种族": "SY_CESHI",
+      "背景": "SY_CESHI",
+      "道号": "SY_CESHI",
+      "性格": "SY_CESHI",
+      "外貌": "SY_CESHI",
+      "身份": "SY_CESHI",
+      "tier": "SY_CESHI",
+      "level": 1,
+      "修为进度": 1,
+      "修为瓶颈": "SY_CESHI",
+      "寿元": {
+        "当前": 1,
+        "上限": {
+          "基础": 1,
+          "加成": 0,
+          "最终上限": 0
+        }
+      },
+      "心境": {
+        "当前": 1,
+        "上限": {
+          "基础": 1,
+          "加成": 0,
+          "最终上限": 0
+        }
+      },
+      "根基属性": {
+        "根骨": {
+          "基础": 1,
+          "加成": 0,
+          "最终值": 0
+        },
+        "身法": {
+          "基础": 1,
+          "加成": 0,
+          "最终值": 0
+        },
+        "悟性": {
+          "基础": 1,
+          "加成": 0,
+          "最终值": 0
+        },
+        "神海": {
+          "基础": 1,
+          "加成": 0,
+          "最终值": 0
+        },
+        "经脉": {
+          "基础": 1,
+          "加成": 0,
+          "最终值": 0
+        },
+        "魂魄": {
+          "基础": 0,
+          "加成": 0,
+          "最终值": 0
+        },
+        "道心": {
+          "基础": 0,
+          "加成": 0,
+          "最终值": 0
+        },
+        "魅力": {
+          "基础": 1,
+          "加成": 0,
+          "最终值": 0
+        },
+        "气运": {
+          "基础": 1,
+          "加成": 0,
+          "最终值": 0
+        }
+      },
+      "核心属性": {
+        "物攻": {
+          "基础": 1,
+          "加成": 0,
+          "最终值": 0
+        },
+        "法强": {
+          "基础": 1,
+          "加成": 0,
+          "最终值": 0
+        },
+        "物防": {
+          "基础": 1,
+          "加成": 0,
+          "最终值": 0
+        },
+        "法抗": {
+          "基础": 1,
+          "加成": 0,
+          "最终值": 0
+        },
+        "空速": {
+          "基础": 1,
+          "加成": 0,
+          "最终值": 0
+        },
+        "暴击率": {
+          "基础": 1,
+          "加成": 0,
+          "最终值": 0
+        },
+        "神识强度": {
+          "基础": 1,
+          "加成": 0,
+          "最终值": 0
+        }
+      },
+      "属性状态": {
+        "生命": {
+          "当前": 1,
+          "上限": {
+            "基础": 0,
+            "加成": 0,
+            "最终上限": 0
+          }
+        },
+        "体力": {
+          "当前": 1,
+          "上限": {
+            "基础": 0,
+            "加成": 0,
+            "最终上限": 0
+          }
+        },
+        "法力": {
+          "当前": 1,
+          "上限": {
+            "基础": 0,
+            "加成": 0,
+            "最终上限": 0
+          }
+        },
+        "神识": {
+          "当前": 1,
+          "上限": {
+            "基础": 0,
+            "加成": 0,
+            "最终上限": 0
+          }
+        }
+      },
+      "装备列表": {
+        "主手": null,
+        "副手": null,
+        "头部": null,
+        "躯干": null,
+        "腿部": null,
+        "足部": null,
+        "手部": null,
+        "颈部": null,
+        "腰部": null,
+        "手指一": null,
+        "手指二": null,
+        "丹田": null,
+        "识海": null
+      },
+      "背包列表": {
+        "max_slots": 10,
+        "灵石": 1111,
+        "slots": {
+          "0": {
+            "item_id": "WP_CESHI",
+            "quantity": 1,
+            "instance_data": null
+          }
+        }
+      },
+      "已获天赋": {
+        "$meta": {
+          "extensible": true
+        },
+        "TF_CESHI": true
+      },
+      "已获灵根": {
+        "$meta": {
+          "extensible": true
+        },
+        "LG_CESHI": true
+      },
+      "当前状态": {
+        "$meta": {
+          "extensible": true
+        },
+        "ZT_CESHI": {
+          "remaining_duration": 10,
+          "source_id": "SY_CESHI",
+          "applied_at": {}
+        }
+      },
+      "已学功法": {
+        "$meta": {
+          "extensible": true
+        },
+        "GF_CESHI": {
+          "当前层数": 1,
+          "当前层级点数": 1,
+          "是否主修": true,
+          "是否辅修": false
+        }
+      },
+      "内在驱动": {
+        "短期目标": "SY_CESHI",
+        "长期夙愿": "SY_CESHI",
+        "核心价值观": "SY_CESHI",
+        "禁忌与逆鳞": "SY_CESHI"
+      },
+      "社交网络": {
+        "人物关系网": {
+          "$meta": {
+            "extensible": true
+          },
+          "NPC_SY_CESHI": {
+            "relationship": "SY_CESHI",
+            "主观印象": "SY_CESHI"
+          }
+        },
+        "所属势力": {
+          "势力名称": "SY_CESHI",
+          "势力地位": "SY_CESHI"
+        }
+      },
+      "互动模式": {
+        "口癖/口头禅": "",
+        "谈话风格": "SY_CESHI",
+        "话题偏好": "SY_CESHI",
+        "情报价值": "SY_CESHI"
+      },
+      "情爱史与性观念": {
+        "经验状态": "SY_CESHI",
+        "首次经历": {
+          "对象描述": "SY_CESHI",
+          "体验评价": "SY_CESHI"
+        },
+        "性观念": "SY_CESHI",
+        "癖好与禁忌": {
+          "喜好": {
+            "1": "CESHI",
+            "$meta": {
+              "extensible": true
+            }
+          },
+          "雷区": {
+            "1": "CESHI",
+            "$meta": {
+              "extensible": true
+            }
+          }
+        }
+      },
+      "与玩家关系": {
+        "立场": "NEUTRAL",
+        "称呼": "SY_CESHI",
+        "relationship": "SY_CESHI",
+        "favorability": 0,
+        "allow_view": true,
+        "allow_trade": true,
+        "event_history": {
+          "$meta": {
+            "extensible": true
+          }
+        }
+      },
+      "special_effects": {
+        "1": ""
+      }
+    }
+  },
+  "任务列表": {
+    "$meta": {
+      "extensible": true
+    },
+    "RW_CESHI": {
+      "id": "RW_CESHI",
+      "name": "CESHI",
+      "type": "主线",
+      "category_tag": "CESHI",
+      "推荐境界": "神桥",
+      "description": "CESHI",
+      "任务链": {
+        "前置任务ID": null,
+        "后续任务ID": null
+      },
+      "解锁条件": {
+        "最低等级": 1,
+        "前置任务集": {
+          "$meta": {
+            "extensible": true
+          }
+        },
+        "触发地点ID": "",
+        "触发NPC实例ID": "NPC_SY_CESHI"
+      },
+      "任务目标": {
+        "$meta": {
+          "extensible": true
+        },
+        "CESHI": {
+          "description": "CESHI",
+          "target_id": "CESHI",
+          "required_amount": 1
+        }
+      },
+      "任务奖励": {
+        "固定奖励": {
+          "修为进度": 1,
+          "灵石": 1,
+          "好感度": {
+            "$meta": {
+              "extensible": true
+            },
+            "NPC_SY_CESHI": 2
+          },
+          "物品": {
+            "$meta": {
+              "extensible": true
+            },
+            "WP_CESHI": 1
+          },
+          "称号": {
+            "$meta": {
+              "extensible": true
+            },
+            "CH_CESHI": true
+          },
+          "状态": {
+            "$meta": {
+              "extensible": true
+            },
+            "ZT_CESHI": true
+          }
+        },
+        "可选奖励": {
+          "1": {
+            "description": "CESHI",
+            "奖励": {
+              "好感度": {
+                "$meta": {
+                  "extensible": true
+                },
+                "NPC_SY_CESHI": 100
+              },
+              "物品": {
+                "$meta": {
+                  "extensible": true
+                },
+                "WP_CESHI": 1
+              },
+              "称号": {
+                "$meta": {
+                  "extensible": true
+                },
+                "CH_CESHI": true
+              },
+              "状态": {
+                "$meta": {
+                  "extensible": true
+                },
+                "ZT_CESHI": true
+              },
+              "修为进度": 10,
+              "灵石": 4
+            }
+          },
+          "$meta": {
+            "extensible": true
+          }
+        }
+      },
+      "任务发布者": {
+        "npc_instance_id": "NPC_SY_CESHI",
+        "起始对话": "CESHI"
+      },
+      "任务提交者": {
+        "npc_instance_id": "NPC_SY_CESHI",
+        "结束对话": "CESHI"
+      }
+    }
+  },
+  "世界定义列表": {
+    "地点集": {
+      "$meta": {
+        "extensible": true
+      },
+      "DD_CESHI": {
+        "id": "DD_CESHI",
+        "name": "CESHI",
+        "description": "CESHI",
+        "地形": "CESHI",
+        "type": "CESHI",
+        "隶属": "CESHI",
+        "所属势力": "CESHI",
+        "毗邻之处": {
+          "$meta": {
+            "extensible": true
+          }
+        },
+        "内部地点": {
+          "$meta": {
+            "extensible": true
+          },
+          "DD_NB_CESHI": {
+            "name": "CESHI",
+            "type": "CESHI",
+            "description": "CESHI"
+          }
+        },
+        "常驻NPC集": {
+          "$meta": {
+            "extensible": true
+          },
+          "NPC_SY_CESHI": {
+            "$meta": {
+              "extensible": true
+            }
+          }
+        }
+      }
+    },
+    "天气效果定义": {
+      "1": {
+        "special_effects": {
+          "$meta": {
+            "extensible": true
+          },
+          "CESHI": "CESHI"
+        }
+      },
+      "$meta": {
+        "extensible": true
+      }
+    },
+    "月相效果定义": {
+      "$meta": {
+        "extensible": true
+      },
+      "CESHI": {
+        "special_effects": {
+          "$meta": {
+            "extensible": true
+          },
+          "CESHI": "CESHI"
+        }
+      }
+    },
+    "季节效果定义": {
+      "1": {
+        "description": "CESHI",
+        "effects": {
+          "天气倾向": {
+            "$meta": {
+              "extensible": true
+            },
+            "CESHI": 0.1
+          },
+          "特殊效果": {
+            "$meta": {
+              "extensible": true
+            },
+            "CESHI": "CESHI"
+          }
+        }
+      },
+      "$meta": {
+        "extensible": true
+      }
+    },
+    "灵气浓度定义": {
+      "$meta": {
+        "extensible": true
+      },
+      "CESHI": {
+        "multiplier": 1
+      }
+    }
+  },
+  "dbPriority": 1
+}
