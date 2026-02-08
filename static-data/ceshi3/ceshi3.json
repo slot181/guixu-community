@@ -1,0 +1,237 @@
+{
+  "$schema": "guixu-static-database-v1",
+  "$version": "1.0.0",
+  "version": "1.0.0",
+  "name": "ceshi3",
+  "id": "db_ceshi3",
+  "author": "slot",
+  "description": "",
+  "createdAt": "2026-02-03 16:41:52",
+  "tags": [],
+  "uploadedAt": "2026-02-08 05:38:53",
+  "boundWorldbook": {
+    "worldbookName": "归墟（拼好卡）",
+    "entries": []
+  },
+  "天赋定义列表": {
+    "TF_LDWQ": {
+      "id": "TF_LDWQ",
+      "name": "力大无穷",
+      "品阶": "中品",
+      "description": "力大无穷。",
+      "bonuses": {
+        "fixed_values": {
+          "foundation": {
+            "根骨": 10
+          },
+          "core": {
+            "物攻": 15
+          }
+        },
+        "percentage_values": {
+          "foundation": {},
+          "core": {
+            "暴击率": 0.05
+          },
+          "resources": {}
+        }
+      },
+      "special_effects": {
+        "剑意": "以心御剑，普攻有小概率追加一道剑气。",
+        "$meta": {
+          "extensible": true
+        }
+      }
+    },
+    "TF_CMGR": {
+      "id": "TF_CMGR",
+      "name": "聪明过人",
+      "品阶": "中品",
+      "description": "聪明过人。",
+      "bonuses": {
+        "fixed_values": {
+          "foundation": {
+            "根骨": 5
+          }
+        }
+      },
+      "special_effects": {
+        "剑意": "以心御剑，普攻有小概率追加一道剑气。",
+        "$meta": {
+          "extensible": true
+        }
+      }
+    }
+  },
+  "灵根定义列表": {
+    "$meta": {
+      "extensible": true
+    }
+  },
+  "功法定义列表": {
+    "$meta": {
+      "extensible": true
+    }
+  },
+  "神通列表": {
+    "$meta": {
+      "extensible": true
+    }
+  },
+  "物品列表": {
+    "$meta": {
+      "extensible": true
+    }
+  },
+  "称号列表": {
+    "$meta": {
+      "extensible": true
+    }
+  },
+  "状态列表": {
+    "$meta": {
+      "extensible": true
+    }
+  },
+  "NPC定义列表": {
+    "$meta": {
+      "extensible": true
+    }
+  },
+  "NPC实例列表": {
+    "$meta": {
+      "extensible": true
+    }
+  },
+  "任务列表": {
+    "$meta": {
+      "extensible": true
+    }
+  },
+  "世界定义列表": {
+    "地点集": {
+      "2323": {
+        "id": "2323",
+        "name": "2222",
+        "description": "",
+        "地形": "",
+        "type": "",
+        "隶属": null,
+        "所属势力": null,
+        "毗邻之处": {
+          "$meta": {
+            "extensible": true
+          }
+        },
+        "内部地点": {
+          "23": {
+            "name": "23",
+            "type": "23",
+            "description": "22222"
+          },
+          "$meta": {
+            "extensible": true
+          }
+        },
+        "常驻NPC集": {
+          "$meta": {
+            "extensible": true
+          }
+        }
+      },
+      "$meta": {
+        "extensible": true
+      }
+    },
+    "天气效果定义": {
+      "23": {
+        "special_effects": {
+          "23": "2323",
+          "$meta": {
+            "extensible": true
+          }
+        }
+      },
+      "$meta": {
+        "extensible": true
+      }
+    },
+    "月相效果定义": {
+      "23": {
+        "special_effects": {
+          "2323": "232323",
+          "$meta": {
+            "extensible": true
+          }
+        }
+      },
+      "2323": {
+        "special_effects": {
+          "232323": "22222",
+          "$meta": {
+            "extensible": true
+          }
+        }
+      },
+      "$meta": {
+        "extensible": true
+      }
+    },
+    "季节效果定义": {
+      "23": {
+        "description": "",
+        "effects": {
+          "天气倾向": {
+            "$meta": {
+              "extensible": true
+            }
+          },
+          "特殊效果": {
+            "23": 0,
+            "$meta": {
+              "extensible": true
+            }
+          }
+        }
+      },
+      "$meta": {
+        "extensible": true
+      }
+    },
+    "灵气浓度定义": {
+      "223": {
+        "multiplier": 1
+      },
+      "$meta": {
+        "extensible": true
+      }
+    }
+  },
+  "游玩编号": {
+    "run_20260207_072039_y9ulnirm": {
+      "created_at": 1770448899,
+      "已写入": {
+        "talent_def": {
+          "TF_LDWQ": true,
+          "TF_CMGR": true
+        },
+        "location": {
+          "2323": true
+        }
+      }
+    },
+    "run_20260207_084135_gdz4miz8": {
+      "created_at": 1770453753,
+      "已写入": {
+        "talent_def": {
+          "TF_LDWQ": true,
+          "TF_CMGR": true
+        },
+        "location": {
+          "2323": true
+        }
+      }
+    }
+  },
+  "dbPriority": 2
+}
