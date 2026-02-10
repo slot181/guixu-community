@@ -1,0 +1,1265 @@
+{
+  "$schema": "guixu-static-database-v1",
+  "$version": "1.0.0",
+  "version": "1.0.0",
+  "name": "db_ceshi1",
+  "id": "db_ceshi1",
+  "author": "slot",
+  "description": "ceshiceshi",
+  "createdAt": "2026-02-02 15:25:02",
+  "tags": [],
+  "uploadedAt": "2026-02-10 18:00:39",
+  "boundWorldbook": {
+    "worldbookName": "归墟（拼好卡）",
+    "entries": []
+  },
+  "dbPriority": 1,
+  "天赋定义列表": {
+    "talent_sword_heart": {
+      "id": "talent_sword_heart",
+      "name": "剑心通明",
+      "品阶": "天品",
+      "description": "剑道悟性大增，出剑更快更准。",
+      "bonuses": {
+        "fixed_values": {
+          "foundation": {
+            "悟性": 10
+          },
+          "core": {
+            "法强": 15
+          }
+        },
+        "percentage_values": {
+          "foundation": {},
+          "core": {
+            "暴击率": 0.05
+          },
+          "resources": {}
+        }
+      },
+      "special_effects": {
+        "剑意": "以心御剑，普攻有小概率追加一道剑气。",
+        "$meta": {
+          "extensible": true
+        }
+      }
+    }
+  },
+  "灵根定义列表": {
+    "root_fire_phoenix": {
+      "id": "root_fire_phoenix",
+      "name": "凤凰火灵根",
+      "品阶": "神品",
+      "description": "火之本源相性极高，焚尽尘埃。",
+      "bonuses": {
+        "fixed_values": {
+          "foundation": {},
+          "core": {}
+        },
+        "percentage_values": {
+          "foundation": {
+            "根骨": 0.15
+          },
+          "core": {
+            "法强": 0.25
+          },
+          "resources": {
+            "法力": 0.2
+          }
+        }
+      },
+      "special_effects": {
+        "不死鸟": "濒死时引燃火羽护体，短时间提升抗性。",
+        "$meta": {
+          "extensible": true
+        }
+      }
+    }
+  },
+  "功法定义列表": {
+    "gongfa_taiyin_true": {
+      "id": "gongfa_taiyin_true",
+      "name": "太阴真诀",
+      "tier": "金丹",
+      "品阶": "极品",
+      "description": "清冷如月，静水深流。",
+      "功法属性": "水",
+      "总层数": 5,
+      "修炼条件": {
+        "根基要求": {
+          "$meta": {
+            "extensible": true
+          },
+          "悟性": 8
+        },
+        "前置功法ID": null
+      },
+      "层级效果": {
+        "1": {
+          "description": "初窥门径",
+          "突破点数": 100,
+          "bonuses": {
+            "fixed_values": {
+              "foundation": {},
+              "core": {
+                "法强": 10
+              },
+              "resources": {}
+            },
+            "percentage_values": {
+              "core": {
+                "法强": 0.05
+              },
+              "resources": {
+                "法力": 0.05
+              }
+            }
+          },
+          "解锁神通": {
+            "$meta": {
+              "extensible": true
+            },
+            "spell_yuehua": true
+          }
+        },
+        "$meta": {
+          "extensible": true
+        }
+      }
+    }
+  },
+  "神通列表": {
+    "spell_yuehua": {
+      "id": "spell_yuehua",
+      "name": "月华映影",
+      "type": "辅助",
+      "description": "以月华笼罩周身，隐去气息。",
+      "special_effects": {
+        "潜行": "短时间内不易被发现。",
+        "$meta": {
+          "extensible": true
+        }
+      }
+    }
+  },
+  "物品列表": {
+    "item_black_iron_blade": {
+      "id": "item_black_iron_blade",
+      "name": "玄铁重剑",
+      "type": "武器",
+      "部位": "单手",
+      "tier": "筑基",
+      "品阶": "上品",
+      "description": "重剑无锋，大巧不工。",
+      "max_stack": 1,
+      "bonuses": {
+        "fixed_values": {
+          "foundation": {
+            "根骨": 3
+          },
+          "core": {
+            "物攻": 50
+          },
+          "resources": {}
+        },
+        "percentage_values": {
+          "core": {},
+          "resources": {}
+        }
+      },
+      "special_effects": {
+        "强韧": "受到强力攻击时所受硬直降低。",
+        "$meta": {
+          "extensible": true
+        }
+      },
+      "unlocks_gongfa_id": null,
+      "base_value": 1200
+    },
+    "item_gongfa_book_taiyin": {
+      "id": "item_gongfa_book_taiyin",
+      "name": "太阴真诀（抄本）",
+      "type": "功法",
+      "部位": null,
+      "tier": "金丹",
+      "品阶": "极品",
+      "description": "阴月之道，静以制动。",
+      "max_stack": 1,
+      "unlocks_gongfa_id": "gongfa_taiyin_true",
+      "base_value": 3000
+    },
+    "item_elixir_life": {
+      "id": "item_elixir_life",
+      "name": "九转回春丹",
+      "type": "丹药",
+      "部位": null,
+      "tier": "元婴",
+      "品阶": "极品",
+      "description": "药香温润，服之可大幅恢复生命。",
+      "max_stack": 10,
+      "special_effects": {
+        "立即恢复": "立即恢复生命上限的30%。",
+        "$meta": {
+          "extensible": true
+        }
+      },
+      "unlocks_gongfa_id": null,
+      "base_value": 800
+    },
+    "mat_spirit_iron": {
+      "id": "mat_spirit_iron",
+      "name": "灵铁矿",
+      "type": "材料",
+      "部位": null,
+      "tier": "练气",
+      "品阶": "凡品",
+      "description": "常见的炼器材料，包含微弱灵性。",
+      "max_stack": 99,
+      "unlocks_gongfa_id": null,
+      "base_value": 20
+    },
+    "item_trial_sword": {
+      "id": "item_trial_sword",
+      "name": "试炼木剑",
+      "type": "武器",
+      "部位": "单手",
+      "tier": "练气",
+      "品阶": "凡品",
+      "description": "内堂发放的试炼用木剑，轻便耐用。",
+      "max_stack": 1,
+      "bonuses": {
+        "fixed_values": {
+          "foundation": {},
+          "core": {
+            "物攻": 5
+          },
+          "resources": {}
+        },
+        "percentage_values": {
+          "core": {},
+          "resources": {}
+        }
+      },
+      "special_effects": {
+        "$meta": {
+          "extensible": true
+        }
+      },
+      "unlocks_gongfa_id": null,
+      "base_value": 10
+    }
+  },
+  "称号列表": {
+    "title_dragon_tamer": {
+      "id": "title_dragon_tamer",
+      "name": "龙气羁客",
+      "品阶": "天品",
+      "description": "与龙气相性极佳，踏青云而来。",
+      "bonuses": {
+        "fixed_values": {
+          "foundation": {
+            "气运": 5
+          },
+          "core": {}
+        },
+        "percentage_values": {
+          "foundation": {},
+          "core": {
+            "物攻": 0.05
+          }
+        }
+      },
+      "special_effects": {
+        "龙运加身": "与大衍皇朝相关剧情更易成功。",
+        "$meta": {
+          "extensible": true
+        }
+      }
+    },
+    "title_outer_success": {
+      "id": "title_outer_success",
+      "name": "外门过关",
+      "品阶": "凡品",
+      "description": "顺利通过外门试炼的入门者。",
+      "bonuses": {
+        "fixed_values": {
+          "foundation": {},
+          "core": {}
+        },
+        "percentage_values": {
+          "foundation": {},
+          "core": {}
+        }
+      },
+      "special_effects": {
+        "$meta": {
+          "extensible": true
+        }
+      }
+    }
+  },
+  "状态列表": {
+    "status_blessing_moon": {
+      "id": "status_blessing_moon",
+      "name": "月神的祝福",
+      "description": "月华护佑，心神宁静。",
+      "type": "BUFF",
+      "base_duration": 12,
+      "bonuses": {
+        "fixed_values": {
+          "core": {
+            "法强": 10
+          },
+          "resources": {
+            "法力": 50
+          }
+        },
+        "percentage_values": {
+          "core": {
+            "法强": 0.1
+          },
+          "resources": {
+            "神识": 0.15
+          }
+        }
+      },
+      "special_effects": {
+        "净化": "每小时有概率净化一个负面效果。",
+        "$meta": {
+          "extensible": true
+        }
+      }
+    },
+    "status_poison": {
+      "id": "status_poison",
+      "name": "蛇蝎之毒",
+      "description": "毒素侵体，法体俱损。",
+      "type": "DEBUFF",
+      "base_duration": 6,
+      "bonuses": {
+        "fixed_values": {
+          "core": {
+            "物攻": -10
+          },
+          "resources": {
+            "生命": -100
+          }
+        },
+        "percentage_values": {
+          "core": {
+            "法强": -0.05
+          },
+          "resources": {
+            "生命": -0.1
+          }
+        }
+      },
+      "special_effects": {
+        "中毒": "每小时受到等比生命流失。",
+        "$meta": {
+          "extensible": true
+        }
+      }
+    },
+    "status_aura_swordfield": {
+      "id": "status_aura_swordfield",
+      "name": "剑域",
+      "description": "剑意外放，形成持续性领域压制。",
+      "type": "AURA",
+      "base_duration": -1,
+      "bonuses": {
+        "fixed_values": {
+          "core": {},
+          "resources": {}
+        },
+        "percentage_values": {
+          "core": {
+            "物攻": 0.08
+          },
+          "resources": {}
+        }
+      },
+      "special_effects": {
+        "锋芒": "与敌相邻时，敌方物防下降。",
+        "$meta": {
+          "extensible": true
+        }
+      }
+    }
+  },
+  "NPC定义列表": {
+    "npc_tpl_outer_disciple": {
+      "id": "npc_tpl_outer_disciple",
+      "name": "外门弟子",
+      "性别": "男",
+      "背景": "寒门入道，勤学苦练。",
+      "道号": "道人",
+      "身份": "宗门杂役",
+      "性格": "勤勉、质朴",
+      "外貌": "肤色黝黑，眼神坚毅，衣着朴素。",
+      "tier": "练气一层",
+      "level": 1,
+      "根基属性": {
+        "根骨": {
+          "基础": 2,
+          "加成": 0,
+          "最终值": 2
+        },
+        "身法": {
+          "基础": 2,
+          "加成": 0,
+          "最终值": 2
+        },
+        "悟性": {
+          "基础": 2,
+          "加成": 0,
+          "最终值": 2
+        },
+        "神海": {
+          "基础": 1,
+          "加成": 0,
+          "最终值": 1
+        },
+        "经脉": {
+          "基础": 1,
+          "加成": 0,
+          "最终值": 1
+        },
+        "魂魄": {
+          "基础": 1,
+          "加成": 0,
+          "最终值": 1
+        },
+        "道心": {
+          "基础": 1,
+          "加成": 0,
+          "最终值": 1
+        },
+        "魅力": {
+          "基础": 1,
+          "加成": 0,
+          "最终值": 1
+        },
+        "气运": {
+          "基础": 1,
+          "加成": 0,
+          "最终值": 1
+        }
+      },
+      "核心属性": {
+        "物攻": {
+          "基础": 2,
+          "加成": 0,
+          "最终值": 2
+        },
+        "法强": {
+          "基础": 1,
+          "加成": 0,
+          "最终值": 1
+        },
+        "物防": {
+          "基础": 1,
+          "加成": 0,
+          "最终值": 1
+        },
+        "法抗": {
+          "基础": 1,
+          "加成": 0,
+          "最终值": 1
+        },
+        "空速": {
+          "基础": 1,
+          "加成": 0,
+          "最终值": 1
+        },
+        "暴击率": {
+          "基础": 0,
+          "加成": 0,
+          "最终值": 0
+        },
+        "神识强度": {
+          "基础": 0,
+          "加成": 0,
+          "最终值": 0
+        }
+      },
+      "属性状态": {
+        "生命": {
+          "当前": 10,
+          "上限": {
+            "基础": 10,
+            "加成": 0,
+            "最终上限": 10
+          }
+        },
+        "体力": {
+          "当前": 8,
+          "上限": {
+            "基础": 8,
+            "加成": 0,
+            "最终上限": 8
+          }
+        },
+        "法力": {
+          "当前": 6,
+          "上限": {
+            "基础": 6,
+            "加成": 0,
+            "最终上限": 6
+          }
+        },
+        "神识": {
+          "当前": 4,
+          "上限": {
+            "基础": 4,
+            "加成": 0,
+            "最终上限": 4
+          }
+        }
+      },
+      "已获天赋": {
+        "$meta": {
+          "extensible": true
+        }
+      },
+      "已获灵根": {
+        "$meta": {
+          "extensible": true
+        }
+      }
+    },
+    "npc_tpl_outer_disciple_002": {
+      "id": "npc_tpl_outer_disciple_002",
+      "name": "师叔",
+      "性别": "男",
+      "背景": "寒门入道，勤学苦练。",
+      "道号": "道人",
+      "身份": "宗门杂役",
+      "性格": "勤勉、质朴",
+      "外貌": "肤色黝黑，眼神坚毅，衣着朴素。",
+      "tier": "练气一层",
+      "level": 1,
+      "根基属性": {
+        "根骨": {
+          "基础": 2,
+          "加成": 0,
+          "最终值": 2
+        },
+        "身法": {
+          "基础": 2,
+          "加成": 0,
+          "最终值": 2
+        },
+        "悟性": {
+          "基础": 2,
+          "加成": 0,
+          "最终值": 2
+        },
+        "神海": {
+          "基础": 1,
+          "加成": 0,
+          "最终值": 1
+        },
+        "经脉": {
+          "基础": 1,
+          "加成": 0,
+          "最终值": 1
+        },
+        "魂魄": {
+          "基础": 1,
+          "加成": 0,
+          "最终值": 1
+        },
+        "道心": {
+          "基础": 1,
+          "加成": 0,
+          "最终值": 1
+        },
+        "魅力": {
+          "基础": 1,
+          "加成": 0,
+          "最终值": 1
+        },
+        "气运": {
+          "基础": 1,
+          "加成": 0,
+          "最终值": 1
+        }
+      },
+      "核心属性": {
+        "物攻": {
+          "基础": 2,
+          "加成": 0,
+          "最终值": 2
+        },
+        "法强": {
+          "基础": 1,
+          "加成": 0,
+          "最终值": 1
+        },
+        "物防": {
+          "基础": 1,
+          "加成": 0,
+          "最终值": 1
+        },
+        "法抗": {
+          "基础": 1,
+          "加成": 0,
+          "最终值": 1
+        },
+        "空速": {
+          "基础": 1,
+          "加成": 0,
+          "最终值": 1
+        },
+        "暴击率": {
+          "基础": 0,
+          "加成": 0,
+          "最终值": 0
+        },
+        "神识强度": {
+          "基础": 0,
+          "加成": 0,
+          "最终值": 0
+        }
+      },
+      "属性状态": {
+        "生命": {
+          "当前": 10,
+          "上限": {
+            "基础": 10,
+            "加成": 0,
+            "最终上限": 10
+          }
+        },
+        "体力": {
+          "当前": 8,
+          "上限": {
+            "基础": 8,
+            "加成": 0,
+            "最终上限": 8
+          }
+        },
+        "法力": {
+          "当前": 6,
+          "上限": {
+            "基础": 6,
+            "加成": 0,
+            "最终上限": 6
+          }
+        },
+        "神识": {
+          "当前": 4,
+          "上限": {
+            "基础": 4,
+            "加成": 0,
+            "最终上限": 4
+          }
+        }
+      },
+      "已获天赋": {
+        "$meta": {
+          "extensible": true
+        }
+      },
+      "已获灵根": {
+        "$meta": {
+          "extensible": true
+        }
+      }
+    }
+  },
+  "NPC实例列表": {
+    "$meta": {
+      "extensible": true
+    },
+    "npc_inst_li_sixian": {
+      "id": "npc_inst_li_sixian",
+      "template_id": "npc_tpl_outer_disciple",
+      "name": "李思贤",
+      "性别": "男",
+      "外貌": "面容清瘦，手背有旧伤疤。",
+      "性格": "克己刻苦，少言寡语",
+      "身份": "外门弟子",
+      "tier": "练气二层",
+      "level": 3,
+      "修为进度": 35,
+      "修为瓶颈": "需要打通手少阳经",
+      "寿元": {
+        "当前": 20,
+        "上限": 100
+      },
+      "心境": {
+        "当前": 22,
+        "上限": 100
+      },
+      "根基属性": {
+        "根骨": {
+          "基础": 3,
+          "加成": 0,
+          "最终值": 3
+        },
+        "身法": {
+          "基础": 3,
+          "加成": 0,
+          "最终值": 3
+        },
+        "悟性": {
+          "基础": 2,
+          "加成": 0,
+          "最终值": 2
+        },
+        "神海": {
+          "基础": 1,
+          "加成": 0,
+          "最终值": 1
+        },
+        "经脉": {
+          "基础": 1,
+          "加成": 0,
+          "最终值": 1
+        },
+        "魂魄": {
+          "基础": 1,
+          "加成": 0,
+          "最终值": 1
+        },
+        "道心": {
+          "基础": 1,
+          "加成": 0,
+          "最终值": 1
+        },
+        "魅力": {
+          "基础": 1,
+          "加成": 0,
+          "最终值": 1
+        },
+        "气运": {
+          "基础": 1,
+          "加成": 0,
+          "最终值": 1
+        }
+      },
+      "核心属性": {
+        "物攻": {
+          "基础": 3,
+          "加成": 0,
+          "最终值": 3
+        },
+        "法强": {
+          "基础": 1,
+          "加成": 0,
+          "最终值": 1
+        },
+        "物防": {
+          "基础": 1,
+          "加成": 0,
+          "最终值": 1
+        },
+        "法抗": {
+          "基础": 1,
+          "加成": 0,
+          "最终值": 1
+        },
+        "空速": {
+          "基础": 1,
+          "加成": 0,
+          "最终值": 1
+        },
+        "暴击率": {
+          "基础": 0,
+          "加成": 0,
+          "最终值": 0
+        },
+        "神识强度": {
+          "基础": 0,
+          "加成": 0,
+          "最终值": 0
+        }
+      },
+      "属性状态": {
+        "生命": {
+          "当前": 12,
+          "上限": {
+            "基础": 12,
+            "加成": 0,
+            "最终上限": 12
+          }
+        },
+        "体力": {
+          "当前": 9,
+          "上限": {
+            "基础": 9,
+            "加成": 0,
+            "最终上限": 9
+          }
+        },
+        "法力": {
+          "当前": 7,
+          "上限": {
+            "基础": 7,
+            "加成": 0,
+            "最终上限": 7
+          }
+        },
+        "神识": {
+          "当前": 4,
+          "上限": {
+            "基础": 4,
+            "加成": 0,
+            "最终上限": 4
+          }
+        }
+      },
+      "装备列表": {
+        "主手": null,
+        "副手": null,
+        "头部": null,
+        "躯干": null,
+        "腿部": null,
+        "足部": null,
+        "手部": null,
+        "颈部": null,
+        "腰部": null,
+        "手指一": null,
+        "手指二": null,
+        "丹田": null,
+        "识海": null
+      },
+      "背包列表": {
+        "max_slots": 30,
+        "灵石": 50,
+        "slots": {
+          "$meta": {
+            "extensible": true
+          }
+        }
+      },
+      "已获天赋": {
+        "$meta": {
+          "extensible": true
+        }
+      },
+      "已获灵根": {
+        "$meta": {
+          "extensible": true
+        }
+      },
+      "当前状态": {
+        "$meta": {
+          "extensible": true
+        }
+      },
+      "已学功法": {
+        "$meta": {
+          "extensible": true
+        }
+      },
+      "内在驱动": {
+        "短期目标": "通过外门考核",
+        "长期夙愿": "修成金丹，庇护乡里",
+        "核心价值观": "守信重诺",
+        "禁忌与逆鳞": "不可辱没父母遗愿"
+      },
+      "社交网络": {
+        "人物关系网": {
+          "$meta": {
+            "extensible": true
+          },
+          "npc_inst_senior_bro": {
+            "relationship": "同门师兄",
+            "主观印象": "严厉但公正"
+          }
+        },
+        "所属势力": {
+          "势力名称": "青霞宗",
+          "势力地位": "外门弟子"
+        }
+      },
+      "互动模式": {
+        "口癖/口头禅": "在下愚钝，还望指点",
+        "谈话风格": "谨慎、语速偏慢",
+        "话题偏好": "功法修炼、勤学苦练",
+        "情报价值": "外门规训、杂役分工"
+      },
+      "情爱史与性观念": {
+        "经验状态": "青涩",
+        "首次经历": {
+          "对象描述": "无",
+          "体验评价": "无"
+        },
+        "性观念": "先立业后成家",
+        "癖好与禁忌": {
+          "喜好": {
+            "$meta": {
+              "extensible": true
+            }
+          },
+          "雷区": {
+            "$meta": {
+              "extensible": true
+            }
+          }
+        }
+      },
+      "与玩家关系": {
+        "立场": "ALLY",
+        "称呼": "道友",
+        "relationship": "同门",
+        "favorability": 10,
+        "allow_view": true,
+        "allow_trade": false,
+        "event_history": {
+          "$meta": {
+            "extensible": true
+          },
+          "first_meet": "第1世，1年1月1日，在外门练功场初识，互相寒暄。"
+        }
+      }
+    }
+  },
+  "任务列表": {
+    "quest_chain_intro": {
+      "id": "quest_chain_intro",
+      "name": "外门初识",
+      "type": "主线",
+      "category_tag": "宗门",
+      "推荐境界": "练气一层",
+      "description": "你在青霞宗外院初入门墙，需与外门弟子报到。",
+      "任务链": {
+        "前置任务ID": null,
+        "后续任务ID": "quest_chain_followup"
+      },
+      "解锁条件": {
+        "最低等级": 1,
+        "前置任务集": {
+          "$meta": {
+            "extensible": true
+          }
+        },
+        "触发地点ID": "loc_qingxia_outer_yard",
+        "触发NPC实例ID": "npc_inst_li_sixian"
+      },
+      "任务目标": {
+        "$meta": {
+          "extensible": true
+        },
+        "talk_report": {
+          "type": "对话",
+          "description": "与李思贤对话完成报到",
+          "target_id": "npc_inst_li_sixian"
+        }
+      },
+      "任务奖励": {
+        "固定奖励": {
+          "修为进度": 50,
+          "灵石": 20,
+          "好感度": {
+            "$meta": {
+              "extensible": true
+            },
+            "npc_inst_li_sixian": 5
+          },
+          "物品": {
+            "$meta": {
+              "extensible": true
+            },
+            "item_elixir_life": 1
+          },
+          "称号": {
+            "$meta": {
+              "extensible": true
+            },
+            "title_dragon_tamer": true
+          },
+          "状态": {
+            "$meta": {
+              "extensible": true
+            },
+            "status_blessing_moon": true
+          }
+        },
+        "可选奖励": {
+          "$meta": {
+            "extensible": true
+          }
+        }
+      },
+      "任务发布者": {
+        "npc_instance_id": "npc_inst_li_sixian",
+        "起始对话": "来了？先去外院场地报个到。"
+      },
+      "任务提交者": {
+        "npc_instance_id": "npc_inst_li_sixian",
+        "结束对话": "做得好，外门规矩，你要熟悉。"
+      }
+    },
+    "quest_chain_followup": {
+      "id": "quest_chain_followup",
+      "name": "外院试炼",
+      "type": "主线",
+      "category_tag": "宗门",
+      "推荐境界": "练气一层",
+      "description": "前往内堂登记试炼，领取试炼木剑与束带。",
+      "任务链": {
+        "前置任务ID": "quest_chain_intro",
+        "后续任务ID": null
+      },
+      "解锁条件": {
+        "最低等级": 1,
+        "前置任务集": {
+          "$meta": {
+            "extensible": true
+          },
+          "quest_chain_intro": true
+        },
+        "触发地点ID": "loc_qingxia_inner_hall",
+        "触发NPC实例ID": "npc_inst_li_sixian"
+      },
+      "任务目标": {
+        "$meta": {
+          "extensible": true
+        },
+        "get_trial_sword": {
+          "type": "收集",
+          "description": "从内堂领取试炼木剑",
+          "target_id": "item_trial_sword",
+          "required_amount": 1
+        }
+      },
+      "任务奖励": {
+        "固定奖励": {
+          "修为进度": 80,
+          "灵石": 30,
+          "物品": {
+            "$meta": {
+              "extensible": true
+            },
+            "item_trial_sword": 1
+          },
+          "称号": {
+            "$meta": {
+              "extensible": true
+            },
+            "title_outer_success": true
+          },
+          "状态": {
+            "$meta": {
+              "extensible": true
+            },
+            "status_aura_swordfield": true
+          }
+        },
+        "可选奖励": {
+          "$meta": {
+            "extensible": true
+          }
+        }
+      },
+      "任务发布者": {
+        "npc_instance_id": "npc_inst_li_sixian",
+        "起始对话": "去内堂登记，领取试用品。"
+      },
+      "任务提交者": {
+        "npc_instance_id": "npc_inst_li_sixian",
+        "结束对话": "你算合格了，继续努力。"
+      }
+    }
+  },
+  "世界定义列表": {
+    "地点集": {
+      "$meta": {
+        "extensible": true
+      },
+      "loc_qingxia_outer_yard": {
+        "id": "loc_qingxia_outer_yard",
+        "name": "青霞宗外院场地",
+        "description": "外院弟子练习与报到之处。",
+        "地形": "山地",
+        "type": "门派",
+        "隶属": null,
+        "所属势力": null,
+        "毗邻之处": {
+          "$meta": {
+            "extensible": true
+          },
+          "loc_qingxia_inner_hall": {
+            "路程": 1
+          }
+        },
+        "内部地点": {
+          "$meta": {
+            "extensible": true
+          }
+        },
+        "常驻NPC集": {
+          "$meta": {
+            "extensible": true
+          },
+          "npc_inst_li_sixian": {
+            "loc_qingxia_outer_yard": true
+          }
+        }
+      },
+      "loc_qingxia_inner_hall": {
+        "id": "loc_qingxia_inner_hall",
+        "name": "青霞宗内堂",
+        "description": "登记与训诫的所在。",
+        "地形": "山地",
+        "type": "门派",
+        "隶属": "loc_qingxia_outer_yard",
+        "所属势力": null,
+        "毗邻之处": {
+          "$meta": {
+            "extensible": true
+          },
+          "loc_qingxia_outer_yard": {
+            "路程": 1
+          }
+        },
+        "内部地点": {
+          "$meta": {
+            "extensible": true
+          }
+        },
+        "常驻NPC集": {
+          "$meta": {
+            "extensible": true
+          }
+        }
+      }
+    },
+    "天气效果定义": {
+      "$meta": {
+        "extensible": true
+      },
+      "晴": {
+        "special_effects": {
+          "心境舒畅": "晴朗天气使人心神合一，修炼时心境消耗减半。"
+        }
+      },
+      "小雨": {
+        "special_effects": {
+          "万物滋养": "雨水滋润大地，草药类植物的生长速度微量提升。"
+        }
+      },
+      "雷暴": {
+        "special_effects": {
+          "天威浩荡": "雷电之力充斥天地，雷属性功法修炼效率提升，但同时有极低概率在户外被雷击。"
+        }
+      },
+      "大雪": {
+        "special_effects": {
+          "银装素裹": "大雪覆盖地貌，冰属性功法威力提升，但会大幅降低移动速度。"
+        }
+      }
+    },
+    "月相效果定义": {
+      "$meta": {
+        "extensible": true
+      },
+      "新月": {
+        "special_effects": {
+          "隐匿之夜": "夜色最深之时，所有潜行、隐匿类法术效果增强。"
+        }
+      },
+      "上弦月": {
+        "special_effects": {
+          "锐意进取": "金气渐盛，金属性功法和炼器成功率小幅提升。"
+        }
+      },
+      "满月": {
+        "special_effects": {
+          "月华加持": "月华之力达到顶峰，水属性与阴属性功法修炼速度大幅提升。"
+        }
+      }
+    },
+    "季节效果定义": {
+      "$meta": {
+        "extensible": true
+      },
+      "春季": {
+        "description": "万物复苏，冰雪消融，天地间充满了勃勃生机。",
+        "effects": {
+          "天气倾向": {
+            "晴": 2,
+            "小雨": 2.5,
+            "雷暴": 0.5,
+            "大雪": 0.1
+          },
+          "特殊效果": {
+            "生机盎然": "在此季节进行采集和种植，有小概率获得额外收益。"
+          }
+        }
+      },
+      "夏季": {
+        "description": "烈日炎炎，酷暑难耐，是一年中最考验修士心性的时节。",
+        "effects": {
+          "天气倾向": {
+            "晴": 3,
+            "小雨": 1,
+            "雷暴": 1.5,
+            "大雪": 0
+          },
+          "特殊效果": {
+            "心浮气躁": "炎热天气容易导致心境不稳，修炼时走火入魔的风险微量增加。"
+          }
+        }
+      },
+      "秋季": {
+        "description": "金风送爽，天高云淡，丰收的季节，灵气也最为沉稳厚重。",
+        "effects": {
+          "天气倾向": {
+            "晴": 2.5,
+            "小雨": 1,
+            "雷暴": 0.2,
+            "大雪": 0
+          },
+          "特殊效果": {
+            "天道酬勤": "秋季进行炼丹、炼器等技艺活动，获得的熟练度有额外加成。"
+          }
+        }
+      },
+      "冬季": {
+        "description": "千里冰封，万里雪飘，天地肃杀，对所有生灵都是一场严峻的考验。",
+        "effects": {
+          "天气倾向": {
+            "晴": 0.5,
+            "小雨": 0.2,
+            "雷暴": 0,
+            "大雪": 3
+          },
+          "特殊效果": {
+            "寒气侵体": "在没有御寒措施的情况下，长时间在户外会持续降低体力上限。"
+          }
+        }
+      }
+    },
+    "灵气浓度定义": {
+      "$meta": {
+        "extensible": true
+      },
+      "稀薄": {
+        "multiplier": 0.5
+      },
+      "微弱": {
+        "multiplier": 0.8
+      },
+      "普通": {
+        "multiplier": 1
+      },
+      "充裕": {
+        "multiplier": 1.5
+      },
+      "浓郁": {
+        "multiplier": 2
+      },
+      "精纯": {
+        "multiplier": 3
+      },
+      "化液": {
+        "multiplier": 5
+      }
+    }
+  }
+}
