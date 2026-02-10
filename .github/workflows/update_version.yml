@@ -1,0 +1,59 @@
+name: Auto Update Version JSON
+
+# 触发条件：当推送到 main 分支时
+on:
+  push:
+    branches:
+      - main # 如果你的分支叫 master，请改成 master
+    paths-ignore:
+      - 'version.json' # 关键！如果只修改了 version.json，不要再次触发 Action（防止无限套娃）
+
+# 权限设置：允许 Action 修改仓库内容
+permissions:
+  contents: write
+
+jobs:
+  update-version-file:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. 检出代码
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 2. 更新 version.json 文件
+      - name: Update version.json
+        run: |
+          # 获取当前的 Commit SHA
+          LATEST_SHA=$(git rev-parse --short HEAD)
+          
+          # 获取当前 UTC 时间
+          UPDATE_TIME=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+          
+          # -------------------------------------------------------
+          # 使用 jq 修改 JSON，而不是暴力覆盖
+          # 逻辑：读取 version.json -> 修改 latest_sha 和 updated_at -> 存入临时文件 -> 覆盖原文件
+          # -------------------------------------------------------
+          jq --arg sha "$LATEST_SHA" --arg time "$UPDATE_TIME" \
+             '.latest_sha = $sha | .updated_at = $time' \
+             version.json > version.tmp && mv version.tmp version.json
+          
+          # 打印结果检查
+          cat version.json
+
+      # 3. 提交并推送到仓库
+      - name: Commit and Push
+        run: |
+          # 必须保留 "user.name" 和 "user.email" 这两个键名
+          # 配置机器人身份，这样看着比较专业，和你的手动提交区分开
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+          # 检查 version.json 是否有变化
+          if [[ -n $(git status -s version.json) ]]; then
+            echo "Version changed, pushing..."
+            git add version.json
+            git commit -m "Auto-update version.json [skip ci]"
+            git push
+          else
+            echo "No changes in version.json"
+          fi
