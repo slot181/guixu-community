@@ -1,0 +1,22 @@
+{
+  "作者": "梦星",
+  "天赋": "玄梦斩",
+  "天赋id": "tf_6atfo3",
+  "品阶": "神品",
+  "消耗点数": 100,
+  "描述": "一次性技能，可立刻斩杀不高于自身两个大境界的敌人。一天可使用一次。",
+  "version": "1.0.0",
+  "createdAt": "2026-02-04 16:16:16",
+  "uploadedAt": "2026-02-16 16:47:54",
+  "bonuses": {
+    "fixed_values": {
+      "foundation": {},
+      "core": {}
+    },
+    "percentage_values": {
+      "foundation": {},
+      "core": {},
+      "resources": {}
+    }
+  }
+}
