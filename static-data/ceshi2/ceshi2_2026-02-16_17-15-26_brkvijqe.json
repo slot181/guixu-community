@@ -1,0 +1,109 @@
+{
+  "$schema": "guixu-static-database-v1",
+  "$version": "1.0.1",
+  "version": "1.0.1",
+  "name": "ceshi2",
+  "id": "db_ceshi2",
+  "author": "",
+  "description": "",
+  "createdAt": "2026-02-16 15:59:02",
+  "tags": [],
+  "uploadedAt": "2026-02-16 17:15:26",
+  "boundWorldbook": {
+    "worldbookName": "归墟（拼好卡）",
+    "entries": [
+      {
+        "worldbookName": "归墟（拼好卡）",
+        "uid": 83,
+        "name": "测试测试测试测试",
+        "content": "",
+        "enabled": true,
+        "triggerType": "selective",
+        "position": "before_character_definition",
+        "depth": null,
+        "order": 100,
+        "probability": 100,
+        "remotePath": "",
+        "remoteFileName": "测试测试测试测试_2026-02-16_17-15-26_n26i216z.json"
+      }
+    ]
+  },
+  "dbPriority": 2,
+  "天赋定义列表": {
+    "$meta": {
+      "extensible": true
+    }
+  },
+  "灵根定义列表": {
+    "$meta": {
+      "extensible": true
+    }
+  },
+  "功法定义列表": {
+    "$meta": {
+      "extensible": true
+    }
+  },
+  "神通列表": {
+    "$meta": {
+      "extensible": true
+    }
+  },
+  "物品列表": {
+    "$meta": {
+      "extensible": true
+    }
+  },
+  "称号列表": {
+    "$meta": {
+      "extensible": true
+    }
+  },
+  "状态列表": {
+    "$meta": {
+      "extensible": true
+    }
+  },
+  "NPC定义列表": {
+    "$meta": {
+      "extensible": true
+    }
+  },
+  "NPC实例列表": {
+    "$meta": {
+      "extensible": true
+    }
+  },
+  "任务列表": {
+    "$meta": {
+      "extensible": true
+    }
+  },
+  "世界定义列表": {
+    "地点集": {
+      "$meta": {
+        "extensible": true
+      }
+    },
+    "天气效果定义": {
+      "$meta": {
+        "extensible": true
+      }
+    },
+    "月相效果定义": {
+      "$meta": {
+        "extensible": true
+      }
+    },
+    "季节效果定义": {
+      "$meta": {
+        "extensible": true
+      }
+    },
+    "灵气浓度定义": {
+      "$meta": {
+        "extensible": true
+      }
+    }
+  }
+}
