@@ -1,0 +1,46 @@
+{
+  "version": "1.0.0",
+  "name": "副本导入测试",
+  "id": "dungeon_zp47nljppyvd",
+  "author": "副本导入测试",
+  "description": "",
+  "createdAt": "2026-03-04 09:14:18",
+  "tags": [],
+  "uploadedAt": "2026-03-04 09:57:57",
+  "defaults": {
+    "gender": "",
+    "pointPool": null,
+    "race": "",
+    "foundationBase": {}
+  },
+  "allowCustomize": {
+    "talents": true,
+    "background": true,
+    "staticDatabases": true
+  },
+  "linked": {
+    "talents": [
+      {
+        "name": "副本导入测试",
+        "id": "talent_6493fxnwdzz2",
+        "author": "副本导入测试",
+        "dataVersion": "1.0.0"
+      }
+    ],
+    "background": {
+      "name": "副本导入测试",
+      "id": "background_2ta0fb30zaac",
+      "author": "副本导入测试",
+      "dataVersion": "1.0.0"
+    },
+    "staticDbs": [
+      {
+        "name": "副本导入测试",
+        "id": "sdb_h9lz76z3aqrn",
+        "author": "副本导入测试",
+        "dataVersion": "1.0.0"
+      }
+    ],
+    "difficulty": "normal"
+  }
+}
